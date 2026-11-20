@@ -14,3 +14,18 @@ compatibility_date = "2025-01-01"
 [[kv_namespaces]]
 binding = "KV"
 id = "d72c7d66c6d74559b2d5abf237a09884"
+
+# تنظیمات گزارش خطا
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = false
+head_sampling_rate = 1
+persist = true
+
+[observability.issue_detection]
+enabled = false
