@@ -2,16 +2,15 @@ name = "nexa"
 main = "src/worker.js"
 compatibility_date = "2025-01-01"
 
-# ─── متغیرهای اختیاری (می‌توانید در داشبورد Cloudflare هم تنظیم کنید) ───
+# متغیرهای اختیاری
 # [vars]
-# UUID = "your-uuid-here"        # UUID ثابت برای حالت بدون KV
-# PASSWORD = "your-panel-pass"   # رمز ورود به پنل (پیش‌فرض: nexa)
-# PROXYIP = "1.2.3.4"            # برای اتصال به سایت‌های پشت کلادفلر
-# WS_PATH = "/ws"                # مسیر وب‌سوکت (پیش‌فرض: /ws)
-# TELEGRAM_BOT_TOKEN = "..."     # توکن ربات از @BotFather (برای فعال‌شدن ربات تلگرام)
+# UUID = "your-uuid-here"
+# PASSWORD = "your-panel-pass"
+# PROXYIP = "1.2.3.4"
+# WS_PATH = "/ws"
+# TELEGRAM_BOT_TOKEN = "..."
 
-# ─── KV اختیاری: برای مدیریت کاربران و ذخیره تنظیمات ───
-# بعد از ساخت KV در داشبورد، شناسه آن را جایگزین کنید:
-# [[kv_namespaces]]
-# binding = "KV"
-# id = "<your-kv-namespace-id>"
+# اتصال KV
+[[kv_namespaces]]
+binding = "KV"
+id = "d72c7d66c6d74559b2d5abf237a09884"
